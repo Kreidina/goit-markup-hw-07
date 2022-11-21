@@ -1,0 +1,139 @@
+.footer-page {
+  background-color: $bgr-blue;
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.contacts {
+  margin-right: 70px;
+}
+.address {
+  line-height: 1.7;
+  font-style: normal;
+
+  padding-left: 0;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  &__item:first-child {
+    color: $primary-white-color;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.address__link {
+  transition: color $duration-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.join {
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+.join__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-white-color;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color $duration-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.sign-form {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}
+.sign-form__field {
+  display: flex;
+  flex-direction: column;
+
+  & input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.sing-form__input {
+  color: $primary-white-color;
+  background-color: #2f303a;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-top: 20px;
+
+  transition: box-shadow $duration-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: $button-shadow;
+  }
+}
+.sing-form__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  border-radius: 4px;
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: $accent-color;
+    background-image: url(../images/send\ .svg);
+    margin-left: 10px;
+
+    transition: box-shadow $duration-function;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: $button-shadow;
+  }
+}

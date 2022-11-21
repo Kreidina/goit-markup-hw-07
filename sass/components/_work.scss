@@ -1,0 +1,64 @@
+.work__title {
+  color: $primary-text-color;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 4px;
+}
+.work__text {
+  color: $title-text-color;
+  font-size: 16px;
+  line-height: 1.87;
+}
+.work__card {
+  padding: 20px 24px;
+  background: $primary-white-color;
+  border: 1px solid #eeeeee;
+}
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.work__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.work__link {
+  display: block;
+
+  transition: box-shadow $duration-function;
+  &:hover,
+  &:focus {
+    box-shadow: $card-shadow;
+  }
+}
+.work__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.work__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: transform $duration-function;
+  .work__link:hover &,
+  .work__link:focus & {
+    transform: translateY(0%);
+  }
+}
